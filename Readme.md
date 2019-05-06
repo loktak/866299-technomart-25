@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Арсений Спирин](https://up.htmlacademy.ru/htmlcss/25/user/866299).
-* Наставник: `Неизвестно`.
+* Наставник: [Сергей Шершнев](https://htmlacademy.ru/profile/shv_sergey9).
 
 ---
 
