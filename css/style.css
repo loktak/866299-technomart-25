@@ -8,8 +8,9 @@ body {
   line-height: 17px;
   font-weight: normal;
   font-style: normal;
-  font-stretch: normal;color: #000000;
-  line-height: 1,06;
+  font-stretch: normal;
+  color: #000000;
+  line-height: 17px;
 
   background-color: white;
 }
@@ -73,7 +74,6 @@ a {
   height: inherit;
   padding-left: 49px;
 
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 17px;
   color: #ffffff;
 
@@ -154,6 +154,7 @@ h1 {
 
 .header-info-address {
   font-size: 14px;
+  line-height: 24px;
   color: #32425c;
 }
 
@@ -346,7 +347,6 @@ h1 {
  .catalog-h2 {
   background-color: #f2f6f8;
   
-  font-family: "Cuprum", Arial, sans-serif;
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
@@ -425,6 +425,7 @@ h1 {
   line-height: 18px;
   font-weight: normal;
   color: #ffffff;
+  text-transform: uppercase;
   
   display: none;
 }
@@ -451,6 +452,7 @@ h1 {
   line-height: 18px;
   font-weight: normal;
   color: #32425c;
+  text-transform: uppercase;
   
   display: none;
 }
@@ -470,7 +472,6 @@ h1 {
 }
 
 .catalog-items p {
-  font-size: 17px;
   line-height: 18px;
   color: #999999;
   font-weight: bold;
@@ -481,7 +482,6 @@ h1 {
   width: 141px;
   height: 38px;
   
-  font-size: 17px;
   line-height: 18px;
   font-weight: bold;
   color: #ffffff;
