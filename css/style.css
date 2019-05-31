@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: auto;
   padding: 0;
   width: 1200px;
 
@@ -13,6 +13,10 @@ body {
   line-height: 17px;
 
   background-color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 ul {
@@ -23,16 +27,38 @@ a {
   text-decoration: none;
 }
 
-.header-top-navigation {
-  margin: 0;
-  background-color: #293449;
+/* Стили для header и его элементов*/
+header {
+  width: inherit;
+  
+  background-color: #f1f5f7;
 
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.header-top-navigation {
+  min-height: 42px;
+  margin: 0;
+  padding:0;
+  background-color: #293449;
+  width: 1200px;
+  position: relative;
   list-style: none;
   text-align: center;
+
+  display: flex;
+}
+
+.header-top-navigation li:first-child {
+  margin-left: 130px;
+  width: 220px;
+
 }
 
 .button-top {
-  display: inline-block;
+  display: block;
   width: 150px;
   height: 28px;
   padding-top: 14px;
@@ -43,9 +69,11 @@ a {
 }
 
 .logo {
-  display: inline-block;
+  display: block;
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
+  position: absolute;
+  left: 130px;
 }
 .logo-top {
   width: 220px;
@@ -116,6 +144,7 @@ a {
 
 .top-header-order {
   width: 150px;
+  padding-bottom: 0px;
   
   background-color: #63a63e;
 }
@@ -131,38 +160,91 @@ a {
 }
 
 .header-info {
+  width: inherit;
   margin: 0;
-  background-color: #f1f5f7;
+  padding: 0;
+  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-info h1 {
+  display: block;
+  margin-top: 44px;
+  margin-bottom: 49px;
+  margin-left: 183px;
+  
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  font-weight: 400;
+  color: #ee3643;
 }
 
 .header-mid-info {
   list-style: none;
+  
+  padding: 0;
+  margin: 0;
+  
+  display: flex;
+  
 }
 
-h1 {
-  font-size: 16px;
-  font-style: italic;
-  color: #ee3643;
+.phone-adress-container {
+  display: block;
+  margin-top: 200px;
 }
+
+.header-mid-info li {
+  display: block;
+  margin-top: 46px;
+}
+
+.header-mid-info li:first-child {
+  margin-top: 60px;
+  margin-left: 65px;
+}
+
 
 .header-info-phone-number {
+  padding-left: 74px;
+  padding-right: 52px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  
   font-size: 21px;
   color: #e9292a;
   border: solid 3px #ffffff;
-  background: url("../img/icon-phone.svg") no-repeat 
+  background: url("../img/icon-phone.svg") no-repeat 15px 13px;
 }
 
 .header-info-address {
+  text-align: center;
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
 
 .sign-in {
-  background: url("../img/icon-login.svg") no-repeat;
+  padding-left: 48px;
+  margin-left: 69px;
+  padding-right: 27px;
+  background: url("../img/icon-login.svg") no-repeat 14px 13px;
+}
+
+.registration {
+  margin-left: 10px;
+  margin-right: 0;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .user-button {
+  display: block;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  align-items: flex-start;
   background-color: #ffffff;
 
   font-size: 21px;
@@ -187,13 +269,31 @@ h1 {
 }
 
 .site-navigation {
+  width: 940px;
   margin: 0;
+  padding: 0;
+  margin-left: 130px;
+  margin-bottom: 60px;
+
   background-color: #293449;
   list-style: none;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
 }
+
+
 
 .site-navigation a {
  color: #ffffff;
+ display: block;
+ padding: 22px 31px;
+}
+
+.site-navigation a:first-of-type {
+  color: #ffffff;
+  display: block;
 }
 
 .site-navigation a:hover,
@@ -207,22 +307,64 @@ h1 {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* Стили для Main и его элементов*/
+
+main {
+  width: inherit;
+  display: flex;
+}
+
+.main-about {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about-company-block {
+  margin-left: 130px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
 .subtitle {
   font-size: 30px;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 38px;
+  margin-top: 82px;
 }
 
 .normal-text {
+  display: block;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
 }
 
 .delivery-partners {
+  display: block;
   font-size:18px;
   line-height: 20px;
+  padding: 0px;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.delivery-partners li:not(:first-child) {
+  padding-top: 12px;
+  padding-left: 36px;
+}
+
+.delivery-partners li:first-child {
+  padding-bottom: 26px;
 }
 
 .red-button {
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 12px;
   background-color: #ee3643;
 
   font-size: 14px;
@@ -239,100 +381,67 @@ h1 {
   background-color: #ba2732;
 }
 
-.footer-bottom-navigation {
-  background-color: #32425c;
+.contacts-main img {
+  margin-top: 24px;
+  margin-bottom: 39px;
 }
 
-.footer-contacts {
-  font-size: 18px;
-  line-height: 24px;
-  color: #f3f7f9;
+.about_us_button {
+  width: 139px;
+  padding-left: 41px;
+  padding-right: 40px;
+  margin-top: 40px;
 }
 
-.footer-menu {
-  list-style: none;
-  font-size: 18px;
-  line-height: 24px;
+.contact-us-button {
+  padding-left: 63px;
+  padding-right: 59px;
+  margin-bottom: 86px;
 }
 
-.menu a {
-  color: #f1f5f7;
+.contacts-main {
+  margin-left: 130px;
 }
 
-.footer-menu a:hover,
-.footer-menu a:focus {
-  text-decoration: underline;
+
+/*Стили для каталога*/
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.sub-menu a {
-  color: #ffd180;
-}
 
-.menu a:active{
-  color: rgba(241, 245, 247, 0.5);
-  text-decoration: none;
-}
-
-.sub-menu a:active {
- color: rgba(255, 209, 128, 0.5);
- text-decoration: none;
-}
- .additional-info {
-   background-color: #293449;
-
-   font-size: 16px;
-   line-height: 18px;
-   color: #ffffff;
- }
-
- .additional-info a {
-  color: #ffd180;
- }
-
- .additional-info a:hover,
- .additional-info a:focus {
-   text-decoration: underline;
- }
-
- .additional-info a:active {
-   text-decoration: none;
-   color: #ee3643;
- }
-
- .footer-social {
-   list-style: none;
- }
-
- .social-button {
-   width: 42px;
-   height: 42px;
-   
-   background-color: #212a3a;
-   border-radius: 50%;
- }
-
- .social-button:hover,
- .social-button:focus,
- .social-button:active {
-  background-color: #ee3643;
- }
- 
- .vk {  
-    background: url("../img/vk-icon.svg") no-repeat 50% 50%;
- }
- /*не понимаю про ссылка, они у нас пустые, добавлять иображение в li?
-  но на него не нажать тогда как на ссылку */
-
- .catalog-menu {
+.catalog-menu {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
   list-style: none;
+
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  margin-left: 130px;
  }
 
- .catalog-menu a{
+.catalog-menu li:not(:last-child) {
+  padding-right: 24px;
+  padding-left: 16px;
+  background: url(../img/icon-right-small.svg) no-repeat 100% 50%;
+}
+
+.catalog-menu li:last-child {
+  padding-left: 16px;
+}
+
+.catalog-menu li:first-child {
+  padding-left: 0;
+}
+
+.catalog-menu a{
   color: #000000;
+  display: block;
 }
 
 .catalog-menu a:hover,
@@ -340,18 +449,31 @@ h1 {
   color: rgba(0, 0, 0, 0.4);
 }
 
- .home {
-   background: url("../img/icon-home.svg") no-repeat 0% 50%;
- }
+.home {
+  background: url("../img/icon-home.svg") no-repeat;
+  width: 16px;
+  height: 12px;
+  margin-top: 3px;
+}
 
- .catalog-h2 {
+.catalog-h2 {
   background-color: #f2f6f8;
   
   font-size: 30px;
   line-height: 30px;
   font-weight: normal;
   color: #32425c;
- }
+  
+  display: block;
+  width: 910px;
+  margin: 0;
+  margin-left: 130px;
+  margin-top: 24px;
+  padding-left: 30px;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  
+}
 
 .filter {
   font-family: "PT Sans", Arial, sans-serif;
@@ -359,6 +481,11 @@ h1 {
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+  
+  margin: 0;
+  margin-left: 130px;
+  width: 220px;
+  margin-top: 20px;
 }
 
 .filter legend {
@@ -369,6 +496,9 @@ h1 {
 
 .filter ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  
 }
 
 .filter button {
@@ -385,21 +515,38 @@ h1 {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 17px;
   line-height: 18px;
+  text-align: center;
   color: #000000;
+  
+  display: block;
+  width: 702px;
+  margin: 0;
+  padding: 0;
+  margin-left: 21px;
+}
 
+.catalog-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 .catalog-items li {
-  width: 220px;
-  height: 318px;
   border: solid 1px #e5e5e5;
-
-  text-align: center;
+  width: 220px;
+  margin-top: 20px;
 }
 
 .catalog-items li:hover,
 .catalog-items li:focus {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.catalog-items {
+  margin-bottom: 12px;
 }
 
 .catalog-items li:hover img,
@@ -408,17 +555,26 @@ h1 {
 }
 
 .catalog-items li:hover .buy-button,
-.catalog-items li:hover .to-bookmarks,
 .catalog-items li:focus .buy-button,
+.catalog-items li:hover .to-bookmarks,
 .catalog-items li:focus .to-bookmarks {
-  display: inline-block;
+  display: block;
 }
+
+.catalog-items-user-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
 .buy-button {
-  width: 135px;
-  height: 38px;
   box-shadow: inset 0px -3px 0 0 #367315;
   background: #63a63e url("../img/cart-icon.svg") no-repeat 12px 50%;
   margin-top: 44px;
+  margin-left: 42px;
+  margin-right: 43px;
+  padding: 10px 45px;
+  padding-left: 49px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -441,11 +597,13 @@ h1 {
 }
 
 .to-bookmarks {
-  width: 129px;
-  height: 32px;
   border: solid 3px #63a63e;
+  
   margin-top: 7px;
-  margin-bottom: 47px;
+  margin-left: 42px;
+  margin-right: 43px;
+  margin-bottom: 44px;
+  padding: 8px 30px;
   
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
@@ -469,22 +627,206 @@ h1 {
 .catalog-items h3 {
   font-size: 18px;
   line-height: 20px;
+  margin: 0;
+  
 }
 
 .catalog-items p {
   line-height: 18px;
   color: #999999;
   font-weight: bold;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .catalog-item-buy-option {
-  display: inline-block;
-  width: 141px;
-  height: 38px;
+  display: block;
+  margin-left: 43px;
+  margin-top: 9px;
+  margin-bottom: 21px;
+  padding: 10px 36px;
+  
   
   line-height: 18px;
   font-weight: bold;
   color: #ffffff;
+  text-align: left;
 
   background: url("../img/btn.svg") no-repeat;
 }
+
+.bfg-2000 .catalog-item-buy-option {
+  margin-top: 38px;
+}
+
+/*Стили для footer и его элементов*/
+
+footer {
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-navigation {
+  background-color: #32425c;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  width: inherit;
+  min-height: 193px;
+}
+
+.logo-footer {
+  display: block;
+  padding: 20px 41px;
+  padding-bottom: 25px;
+}
+
+.footer-contacts {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+  
+  display: block;
+  margin-left: 133px;
+  margin-top: 100px;
+}
+
+.footer-menu {
+  list-style: none;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+
+}
+
+.top-menu {
+  margin-top: 42px;
+  margin-left: 68px;
+
+}
+
+.sub-menu {
+  margin-top: 35px;
+  margin-left: 101px;
+}
+
+.footer-menu li {
+  padding-right: 60px;
+  display: block;
+  
+}
+
+.top-menu a {
+  color: #f1f5f7;
+}
+
+
+
+.footer-menu a:hover,
+.footer-menu a:focus {
+  text-decoration: underline;
+}
+
+.sub-menu a {
+  color: #ffd180;
+}
+
+.top-menu a:active{
+  color: rgba(241, 245, 247, 0.5);
+  text-decoration: none;
+}
+
+.sub-menu a:active {
+ color: rgba(255, 209, 128, 0.5);
+ text-decoration: none;
+}
+
+.additional-info {
+  background-color: #293449;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+
+  width: inherit;
+  min-height: 107px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.additional-info a {
+  color: #ffd180;
+}
+
+.copyright {
+  margin-left: 133px;
+  margin-top: 39px;
+}
+
+.additional-info a:hover,
+.additional-info a:focus {
+  text-decoration: underline;
+}
+
+.additional-info a:active {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+.footer-social {
+  list-style: none;
+  padding:0;
+  
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 161px;
+  margin-top: 35px;
+}
+.footer-social li:not(:last-child) {
+  margin-right: 3px;
+}
+
+.social-button {
+  display: block;
+  width: 42px;
+  height: 42px;
+  
+  background-color: #212a3a;
+  border-radius: 50%;
+}
+
+
+.social-button:hover,
+.social-button:focus,
+.social-button:active {
+  background-color: #ee3643;
+}
+
+.mail-to-us {
+  padding: 0;
+  margin: 0;
+  margin-left: 119px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.who-made {
+  padding: 0;
+  margin: 0;
+  margin-left: 53px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.vk {  
+  background: url("../img/vk-icon.svg") no-repeat 50% 50%;
+}
+ /*не понимаю про ссылка, они у нас пустые, добавлять иображение в li?
+  но на него не нажать тогда как на ссылку */

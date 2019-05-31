@@ -30,11 +30,11 @@
         <li >
           <a href="#" class="button-top top-header-order">Оформить заказ</a>
         </li>  
-      </ul>     
+      </ul>   
       <section class="header-info">
         <h1>Интернет-магазин<br>строительных материалов<br>и инструментов для ремонта</h1>
         <ul class="header-mid-info">
-          <li>
+          <li class="phone-adress-container">
             <a class="header-info-phone-number" href="tel:+78125550555" aria-label="Номер нашего телефона и адрес">+7 (812) 555-05-55</a>
             <p class="header-info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </li>
@@ -62,66 +62,72 @@
     <main>
       <section class="main-about">
         <h2 hidden>О компании</h2>
-        <p class="subtitle">Компания техномарт</p>
-        <p class="normal-text about-company-text">
-          Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта<br>
-          и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-        </p>
-        <p class="normal-text about-company-text">
-          Мы можем доставить ваш товар в самые отдаленные точки России!<br>
-          Техномарт работает со многими транспортными компаниями:
-        </p>
-        <ul class="delivery-partners">
-          <li>Деловые линии</li>
-          <li>Автотрейдинг</li>
-          <li>ЖелДорЭкспедиция</li>
-        </ul>
-        <a href="#" class="red-button about_us_button">Подробнее о компании</a>
-        <p class="subtitle">Контакты</p>
-        <p class="normal-text" >Вы можете забрать товар сами,<br> заехав в наш офис</p>
-        <a href="contacts.html" class="map">
-          <img src="img/map-mini.png" width="300" height="158" alt="Наш магазин находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-        </a>
-        <a href="contact-us.html" class="red-button">Заблудились? Напишите нам!</a>
-      </section>
-      <section class="modal modal-map">
+        <div class="about-company-block">
+          <p class="subtitle">Компания «техномарт»</p>
+          <p class="normal-text about-company-text-1">
+            Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта<br>
+            и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          </p>
+          <ul class="delivery-partners">
+            <li>
+              <p class="normal-text about-company-text-2">
+                Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+                Техномарт работает со многими транспортными компаниями:
+              </p>
+            </li>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="#" class="red-button about_us_button">Подробнее о компании</a>
+        </div>
+        <div class="contacts-main">
+          <p class="subtitle">Контакты</p>
+          <p class="normal-text" >Вы можете забрать товар сами,<br> заехав в наш офис</p>
+          <a href="contacts.html" class="map">
+            <img src="img/map-mini.png" width="300" height="158" alt="Наш магазин находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          </a>
+          <a href="contact-us.html" class="red-button contact-us-button">Заблудились? Напишите нам!</a>
+        </div>  
+        </section>
+      <section class="modal modal-map visually-hidden">
         <h2 class="visually-hidden">Где мы находимся</h2>
         <p>
           <img src="img/map.jpg" width="940"  height="446" alt="Наш магазин находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
         </p>
         <button class="modal-close" type="button">Закрыть</button>
       </section>
-      <section class="modal modal-contact-us">
+      <section class="modal modal-contact-us visually-hidden">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="get">
-        <p>
-          <label for="contact-us-form-name">Ваше имя</label>
-          <input type="text" name="fio" id="contact-us-form-name" placeholder="Имя Фамилия">
-        </p> 
-        <p>
-          <label for="contact-us-form-mail">Ваш e-mail</label>
-          <input type="text" name="e-mail" id="contact-us-form-mail" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="contact-us-form-letter">Текст письма</label>
-          <textarea name="text" id="contact-us-form-letter" rows="5" cols="50">В свободной форме</textarea>
-        </p>
-        <button class="button" type="submit">
+          <p>
+            <label for="contact-us-form-name">Ваше имя</label>
+            <input type="text" name="fio" id="contact-us-form-name" placeholder="Имя Фамилия">
+          </p> 
+          <p>
+            <label for="contact-us-form-mail">Ваш e-mail</label>
+            <input type="text" name="e-mail" id="contact-us-form-mail" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="contact-us-form-letter">Текст письма</label>
+            <textarea name="text" id="contact-us-form-letter" rows="5" cols="50">В свободной форме</textarea>
+          </p>
+          <button class="button" type="submit">
             Отправить
-        </button>
-      </form>
-      </section>
-      <button class="modal-close" type="button">Закрыть</button>
+          </button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>  
+      </section> 
     </main>
     <footer>
       <section class="footer-bottom-navigation">
         <h2 class="visually-hidden">Нижнее меню сайта</h2>  
-        <a href="index.html" class="logo logo-foter">
+        <a href="index.html" class="logo logo-footer">
           <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина Техномарт">
         </a>
         <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
         <nav class="footer-navigation">
-          <ul class="footer-menu menu">
+          <ul class="footer-menu top-menu">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
