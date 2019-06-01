@@ -1,22 +1,16 @@
 body {
-  margin: auto;
-  padding: 0;
-  width: 1200px;
+  width: 100%;
 
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", 'Arial Narrow', sans-serif;
   font-size: 17px;
   line-height: 17px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  color: #000000;
   line-height: 17px;
-
-  background-color: white;
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 ul {
@@ -29,39 +23,39 @@ a {
 
 /* Стили для header и его элементов*/
 header {
-  width: inherit;
-  
   background-color: #f1f5f7;
 
   display: flex;
   flex-wrap: wrap;
 }
 
+.dark-blue-lane {
+  width: 100%;
+  min-height: 42px;
+  
+  background-color: #293449;
+}
 
 .header-top-navigation {
-  min-height: 42px;
-  margin: 0;
-  padding:0;
-  background-color: #293449;
-  width: 1200px;
+  width: 940px;
+  margin: auto;
   position: relative;
   list-style: none;
   text-align: center;
-
+  padding: 0;
   display: flex;
 }
 
 .header-top-navigation li:first-child {
-  margin-left: 130px;
   width: 220px;
 
 }
 
 .button-top {
   display: block;
-  width: 150px;
-  height: 28px;
-  padding-top: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 33px;
   
   font-size: 17px;
   color: #ffffff;
@@ -73,12 +67,9 @@ header {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
   position: absolute;
-  left: 130px;
 }
 .logo-top {
-  width: 220px;
-  height: 34px;
-  padding-top: 13px; 
+  padding: 13px 55px; 
 
 }
 .logo:hover,
@@ -126,7 +117,7 @@ header {
 .top-header-bookmarks,
 .top-header-cart {
   padding-left: 44px;
-  width: 106px; 
+   
 }
 
 .top-header-bookmarks:hover,
@@ -143,8 +134,7 @@ header {
 }
 
 .top-header-order {
-  width: 150px;
-  padding-bottom: 0px;
+  padding: 12px 20px;
   
   background-color: #63a63e;
 }
@@ -160,9 +150,8 @@ header {
 }
 
 .header-info {
-  width: inherit;
-  margin: 0;
-  padding: 0;
+  width: 940px;
+  margin: auto;
   
   display: flex;
   flex-wrap: wrap;
@@ -171,8 +160,7 @@ header {
 .header-info h1 {
   display: block;
   margin-top: 44px;
-  margin-bottom: 49px;
-  margin-left: 183px;
+  margin-left: 53px;
   
   font-size: 16px;
   font-style: italic;
@@ -183,35 +171,23 @@ header {
 
 .header-mid-info {
   list-style: none;
-  
+  display: flex;
   padding: 0;
   margin: 0;
-  
-  display: flex;
-  
+  margin-left: 63px;
+  padding-top: 46px;
+  padding-bottom: 24px;
 }
 
 .phone-adress-container {
-  display: block;
-  margin-top: 200px;
+  margin-top: 15px;
 }
-
-.header-mid-info li {
-  display: block;
-  margin-top: 46px;
-}
-
-.header-mid-info li:first-child {
-  margin-top: 60px;
-  margin-left: 65px;
-}
-
 
 .header-info-phone-number {
   padding-left: 74px;
   padding-right: 52px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   
   font-size: 21px;
   color: #e9292a;
@@ -224,27 +200,72 @@ header {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+  padding-top: 5px;
 }
 
 .sign-in {
   padding-left: 48px;
-  margin-left: 69px;
+  margin-left: 71px;
   padding-right: 27px;
   background: url("../img/icon-login.svg") no-repeat 14px 13px;
 }
 
 .registration {
   margin-left: 10px;
-  margin-right: 0;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 23px;
+  padding-right: 23px;
+}
+
+.account-menu {
+  margin-left: 51px;
+}
+
+.login-name {
+  padding-left: 47px;
+  padding-right: 69px;
+  margin-bottom: 10px;
+  background: url("../img/icon-user.svg") no-repeat 13px 13px,
+              url("../img/icon-logout.svg") no-repeat 269px 14px;
+}
+
+.my-orders {
+  padding-left: 17px;
+}
+
+.dot {
+  display: inline-block;
+  width: 4px;
+  height: 5px;
+  margin-left: 15px;
+  margin-right: 13px;
+  
+  background-color: #32425c;
+  border-radius: 50%;
+}
+.account-options {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.account-options:hover,
+.account-options:focus {
+  color: #ee3643;
+}
+
+.account-options:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.personal-account:active {
+  display: none;
 }
 
 .user-button {
   display: block;
-  padding-top: 13px;
-  padding-bottom: 13px;
-  align-items: flex-start;
+  padding-top: 14px;
+  padding-bottom: 14px;
   background-color: #ffffff;
 
   font-size: 21px;
@@ -268,32 +289,29 @@ header {
   margin: -1px;
 }
 
-.site-navigation {
+.header-navigation {
+  margin: auto;
   width: 940px;
-  margin: 0;
+}
+
+.site-navigation {
+  margin: auto;
   padding: 0;
-  margin-left: 130px;
   margin-bottom: 60px;
 
   background-color: #293449;
   list-style: none;
   text-align: center;
 
+  align-items: center;
   display: flex;
   justify-content: center;
 }
-
-
 
 .site-navigation a {
  color: #ffffff;
  display: block;
  padding: 22px 31px;
-}
-
-.site-navigation a:first-of-type {
-  color: #ffffff;
-  display: block;
 }
 
 .site-navigation a:hover,
@@ -317,27 +335,28 @@ main {
 .main-about {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  
+  width: 940px;
+  margin: auto;
+  padding-bottom: 86px;
+  padding-top: 52px;
 }
 
 .about-company-block {
-  margin-left: 130px;
   display: flex;
   flex-direction: column;
-  padding: 0;
 }
 
 .subtitle {
   font-size: 30px;
   text-transform: uppercase;
-  padding: 0;
-  margin: 0;
   margin-bottom: 38px;
-  margin-top: 82px;
 }
 
 .normal-text {
   display: block;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", 'Arial Narrow', sans-serif;
   font-size: 13px;
   line-height: 24px;
   margin: 0;
@@ -369,6 +388,7 @@ main {
 
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -387,7 +407,7 @@ main {
 }
 
 .about_us_button {
-  width: 139px;
+  width: 140px;
   padding-left: 41px;
   padding-right: 40px;
   margin-top: 40px;
@@ -396,23 +416,18 @@ main {
 .contact-us-button {
   padding-left: 63px;
   padding-right: 59px;
-  margin-bottom: 86px;
-}
-
-.contacts-main {
-  margin-left: 130px;
 }
 
 
 /*Стили для каталога*/
-.catalog {
+.filter-container {
   display: flex;
   flex-wrap: wrap;
 }
 
 
 .catalog-menu {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", 'Arial Narrow', sans-serif;
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
@@ -476,7 +491,7 @@ main {
 }
 
 .filter {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", 'Arial Narrow', sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #000000;
@@ -502,7 +517,7 @@ main {
 }
 
 .filter button {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", 'Arial Narrow', sans-serif;
   font-size: 13px;
   line-height: 18px;
   color: #000000;
@@ -512,7 +527,7 @@ main {
 }
 
 .catalog-block {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", 'Arial Narrow', sans-serif;
   font-size: 17px;
   line-height: 18px;
   text-align: center;
@@ -576,7 +591,7 @@ main {
   padding: 10px 45px;
   padding-left: 49px;
   
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", 'Arial Narrow', sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -605,7 +620,7 @@ main {
   margin-bottom: 44px;
   padding: 8px 30px;
   
-  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "Cuprum", 'Arial Narrow', sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -662,18 +677,22 @@ main {
 /*Стили для footer и его элементов*/
 
 footer {
-  width: 1200px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
+  background-color: #32425c;
 }
 
 .footer-bottom-navigation {
-  background-color: #32425c;
+  
   display: flex;
   flex-wrap: wrap;
-  position: relative;
-  width: inherit;
+  
+  width: 940px;
   min-height: 193px;
+ 
+  margin: auto;
+  position: relative;
 }
 
 .logo-footer {
@@ -688,7 +707,6 @@ footer {
   color: #f3f7f9;
   
   display: block;
-  margin-left: 133px;
   margin-top: 100px;
 }
 
@@ -705,16 +723,15 @@ footer {
 
 .top-menu {
   margin-top: 42px;
-  margin-left: 68px;
-
+  margin-left: 66px;
 }
 
 .sub-menu {
   margin-top: 35px;
-  margin-left: 101px;
+  margin-left: 100px;
 }
 
-.footer-menu li {
+.footer-menu li:not(:last-child) {
   padding-right: 60px;
   display: block;
   
@@ -746,26 +763,19 @@ footer {
 }
 
 .additional-info {
-  background-color: #293449;
-  margin: 0;
+  width: 940px;
+  margin: auto;
+  min-height: 107px;
+  display: flex;
+  flex-wrap: wrap;
 
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-
-  width: inherit;
-  min-height: 107px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .additional-info a {
   color: #ffd180;
-}
-
-.copyright {
-  margin-left: 133px;
-  margin-top: 39px;
 }
 
 .additional-info a:hover,
@@ -780,8 +790,7 @@ footer {
 
 .footer-social {
   list-style: none;
-  padding:0;
-  
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   margin-left: 161px;
@@ -807,18 +816,18 @@ footer {
   background-color: #ee3643;
 }
 
+.copyright {
+  margin-top: 39px;
+}
+
 .mail-to-us {
-  padding: 0;
-  margin: 0;
-  margin-left: 119px;
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
+  margin-left: 119px;
+  margin-top: 40px;
 }
 
 .who-made {
-  padding: 0;
-  margin: 0;
   margin-left: 53px;
   margin-top: 40px;
   display: flex;
