@@ -423,8 +423,15 @@ main {
 .filter-container {
   display: flex;
   flex-wrap: wrap;
+  
+  margin-top: 20px;
 }
 
+.catalog {
+  width: 940px;
+  margin: auto;
+  padding-top: 25px;
+}
 
 .catalog-menu {
   font-family: "PT Sans", 'Arial Narrow', sans-serif;
@@ -436,8 +443,6 @@ main {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: 25px;
-  margin-left: 130px;
  }
 
 .catalog-menu li:not(:last-child) {
@@ -482,12 +487,10 @@ main {
   display: block;
   width: 910px;
   margin: 0;
-  margin-left: 130px;
   margin-top: 24px;
   padding-left: 30px;
   padding-top: 32px;
   padding-bottom: 34px;
-  
 }
 
 .filter {
@@ -496,11 +499,8 @@ main {
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
-  
   margin: 0;
-  margin-left: 130px;
   width: 220px;
-  margin-top: 20px;
 }
 
 .filter legend {
@@ -513,7 +513,6 @@ main {
   list-style: none;
   padding: 0;
   margin: 0;
-  
 }
 
 .filter button {
@@ -535,9 +534,7 @@ main {
   
   display: block;
   width: 702px;
-  margin: 0;
-  padding: 0;
-  margin-left: 21px;
+  margin-left: 18px;
 }
 
 .catalog-items {
