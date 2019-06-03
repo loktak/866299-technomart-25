@@ -1,6 +1,7 @@
 body {
   width: 100%;
-
+  margin: 0;
+  
   font-family: "Cuprum", 'Arial Narrow', sans-serif;
   font-size: 17px;
   line-height: 17px;
@@ -274,17 +275,11 @@ header {
   fill: #c5c5c5;
 }
 
-.logout-container {
+.logout {
+  width: 20px;
   position: absolute;
   top: 13px;
   right: 10px;
-  z-index: 20;
-  background-color: #c5c5c5;
-}
-
-.logout {
-  width: 20px;
-  position: relative;
 }
 
 .logout svg {
@@ -1147,22 +1142,25 @@ footer {
 }
 
 .footer-contacts {
+  width: 323px;
+  display: block;
+  margin-top: 100px;
+  
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
-  
-  display: block;
-  margin-top: 100px;
+}
+
+.footer-navigation {
+  margin-left: 63px;
 }
 
 .footer-menu {
   padding: 0;
   margin: 0;
   
-
   display: flex;
   flex-wrap: wrap;
-  
   
   list-style: none;
   font-size: 18px;
@@ -1171,12 +1169,11 @@ footer {
 
 .top-menu {
   margin-top: 42px;
-  margin-left: 66px;
 }
 
 .sub-menu {
   margin-top: 35px;
-  margin-left: 100px;
+  margin-left: 35px;
 }
 
 .footer-menu li:not(:last-child) {
@@ -1213,6 +1210,7 @@ footer {
   min-height: 107px;
   display: flex;
   flex-wrap: wrap;
+  
 
   font-size: 16px;
   line-height: 18px;
@@ -1241,6 +1239,7 @@ footer {
   margin-left: 161px;
   margin-top: 35px;
 }
+
 .footer-social li:not(:last-child) {
   margin-right: 3px;
 }
