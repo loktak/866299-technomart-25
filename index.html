@@ -126,38 +126,38 @@
         </a>
         <a href="contact-us.html" class="red-button contact-us-button">Заблудились? Напишите нам!</a>
       </div>
-    <section class="modal modal-map visually-hidden">
-      <h2 class="visually-hidden">Где мы находимся</h2>
-      <div class="big-map">
-        <img src="img/map.jpg" width="940" height="446"
-          alt="Наш магазин находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      <section class="modal modal-map visually-hidden">
+        <h2 class="visually-hidden">Где мы находимся</h2>
+        <div class="big-map">
+          <img src="img/map.jpg" width="940" height="446"
+            alt="Наш магазин находится по адресу: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+          <button class="modal-close" type="button"></button>
+        </div>
+      </section>
+      <section class="modal modal-contact-us visually-hidden">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="get">
+          <div class="text-areas">
+            <label class="your-name">
+              Ваше имя
+              <input type="text" name="fio" placeholder="Имя Фамилия">
+            </label>
+            <label class="contact-us-form-mail">
+              Ваш e-mail
+              <input type="text" name="e-mail" placeholder="email@example.com">
+            </label>
+            <label class="letter-area">Текст письма
+              <textarea name="text" id="contact-us-form-letter" rows="5" cols="50">В свободной форме</textarea>
+            </label>
+          </div>
+          <div class="grey-background">
+            <button class="button" type="submit">
+              Отправить
+            </button>
+          </div>
+        </form>
         <button class="modal-close" type="button"></button>
-      </div>
-    </section>
-    <section class="modal modal-contact-us visually-hidden">
-      <h2 class="visually-hidden">Напишите нам</h2>
-      <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="get">
-        <div class="text-areas">
-          <label class="your-name">
-            Ваше имя
-            <input type="text" name="fio" placeholder="Имя Фамилия">
-          </label>
-          <label class="contact-us-form-mail">
-            Ваш e-mail
-            <input type="text" name="e-mail" placeholder="email@example.com">
-          </label>
-          <label class="letter-area">Текст письма
-            <textarea name="text" id="contact-us-form-letter" rows="5" cols="50">В свободной форме</textarea>
-          </label>
-        </div>
-        <div class="grey-background">
-          <button class="button" type="submit">
-            Отправить
-          </button>
-        </div>
-      </form>
-      <button class="modal-close" type="button"></button>
-    </section>
+      </section>
     </section>
   </main>
   <footer>

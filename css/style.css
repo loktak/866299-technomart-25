@@ -665,10 +665,6 @@ main {
   box-shadow: 0 0 14.7px 1.3px rgba(47, 42, 43, 0.5);
 }
 
-.big-map {
-  position: relative;
-}
-
 /*Стили для каталога*/
 .catalog {
   width: 940px;
@@ -1142,7 +1138,6 @@ footer {
   width: 940px;
   min-height: 193px;
   margin: auto;
-  position: relative;
 }
 
 .logo-footer {
@@ -1172,8 +1167,6 @@ footer {
   list-style: none;
   font-size: 18px;
   line-height: 24px;
-  
-
 }
 
 .top-menu {
@@ -1189,7 +1182,6 @@ footer {
 .footer-menu li:not(:last-child) {
   padding-right: 60px;
   display: block;
-
 }
 
 .top-menu a {
@@ -1285,15 +1277,13 @@ footer {
 }
 
 .mail-to-us {
-  display: flex;
-  flex-direction: column;
+  width: 135px;
   margin-left: 119px;
   margin-top: 40px;
 }
 
 .who-made {
+  width: 96px;
   margin-left: 53px;
   margin-top: 40px;
-  display: flex;
-  flex-direction: column;
 }
