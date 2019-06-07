@@ -15,7 +15,7 @@
 <body>
   <header>
     <div class="dark-blue-lane">
-      <ul class="header-top-navigation">
+      <ul class="header-top-navigation content-container">
         <li>
           <a href="index.html" class="logo logo-top">
             <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт">
@@ -117,7 +117,9 @@
         <li><a href="#">Перфораторы</a></li>
       </ul>
     </nav>
-    <h2 class="catalog-h2">Перфораторы</h2>
+    <div class="block-title-container block-title-container-catalog content-container">
+      <h2 class="block-title">Перфораторы</h2>
+    </div>
     <div class="filter-container">
       <form class="filter" method="GET" action="https://echo.htmlacademy.ru">
         <div class="filter-top-text">
@@ -130,8 +132,8 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
+              <button class="toggle toggle-min"></button>
+              <button class="toggle toggle-max"></button>
             </div>
             <div class="price-controls">
               <label class="min-price">
@@ -148,32 +150,102 @@
           <legend>ПРОИЗВОДИТЕЛИ:</legend>
           <ul>
             <li>
-              <label>
-                <input type="checkbox" name="BOSCH" checked>
+              <input class="filter-input " type="checkbox" id="bosch" name="BOSCH" checked>
+              <label class="filter-label" for="bosch">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23"
+                  xml:space="preserve">
+                  <g id="Layer_1">
+                  </g>
+                  <g id="Layer_2">
+                    <g>
+                      <polygon
+                        points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		" />
+                      <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+                    H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z" />
+                    </g>
+                  </g>
+                </svg>
                 BOSCH
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" name="INTERSKOL">
+              <input class="filter-input " type="checkbox" id="INTERSKOL" name="INTERSKOL">
+              <label class="filter-label" for="INTERSKOL">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23"
+                  xml:space="preserve">
+                  <g id="Layer_1">
+                  </g>
+                  <g id="Layer_2">
+                    <g>
+                      <polygon
+                        points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		" />
+                      <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+                    H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z" />
+                    </g>
+                  </g>
+                </svg>
                 ИНТЕРСКОЛ
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" name="MAKITA" checked>
+              <input class="filter-input " type="checkbox" id="MAKITA" name="MAKITA" checked>
+              <label class="filter-label" for="MAKITA">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23"
+                  xml:space="preserve">
+                  <g id="Layer_1">
+                  </g>
+                  <g id="Layer_2">
+                    <g>
+                      <polygon
+                        points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		" />
+                      <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+                    H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z" />
+                    </g>
+                  </g>
+                </svg>
                 MAKITA
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" name="DEWALT">
-                DEWALT
+              <input class="filter-input " type="checkbox" id="DEWALT" name="DEWALT">
+              <label class="filter-label" for="DEWALT">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23"
+                  xml:space="preserve">
+                  <g id="Layer_1">
+                  </g>
+                  <g id="Layer_2">
+                    <g>
+                      <polygon
+                        points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		" />
+                      <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+                    H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z" />
+                    </g>
+                  </g>
+                </svg>
+                DEWALt
               </label>
             </li>
             <li>
-              <label>
-                <input type="checkbox" name="HITACHI">
+              <input class="filter-input " type="checkbox" id="HITACHI" name="HITACHI">
+              <label class="filter-label" for="HITACHI">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                  y="0px" width="27px" height="23px" viewBox="0 0 27 23" enable-background="new 0 0 27 23"
+                  xml:space="preserve">
+                  <g id="Layer_1">
+                  </g>
+                  <g id="Layer_2">
+                    <g>
+                      <polygon
+                        points="7.285,7.486 4.456,10.315 12.239,18.098 26.171,4.166 23.343,1.337 12.239,12.439 		" />
+                      <path d="M21,20c0,0.542-0.458,1-1,1H3c-0.542,0-1-0.458-1-1V3c0-0.542,0.458-1,1-1h16.908l1.585-1.585C21.051,0.158,20.545,0,20,0
+                    H3C1.35,0,0,1.35,0,3v17c0,1.65,1.35,3,3,3h17c1.65,0,3-1.35,3-3v-9.829l-2,2V20z" />
+                    </g>
+                  </g>
+                </svg>
                 HITACHI
               </label>
             </li>
@@ -183,14 +255,14 @@
           <legend>ПИТАНИЕ:</legend>
           <ul>
             <li>
-              <label>
-                <input type="radio" name="power" value="accummulator" checked>
+              <input type="radio" name="power" id="accum" value="accummulator" checked>
+              <label class="filter-label power-label" for="accum">
                 Аккумуляторные
               </label>
             </li>
             <li>
-              <label>
-                <input type="radio" name="power" value="Cable">
+              <input type="radio" name="power" id="cable" value="Cable">
+              <label class="filter-label power-label" for="cable">
                 Сетевые
               </label>
             </li>
@@ -201,46 +273,23 @@
       <section class="catalog-block">
         <div class="filter-top-text filter-sort-menu">
           <span>сортировка:</span>
-          <form class="sorting-menu" method="GET" action="https://echo.htmlacademy.ru">
-            <fieldset>
-              <ul>
-                <li>
-                  <label>
-                    <input class="sorting-menu-radio-button" type="radio" name="sorting" value="by-price" checked>
-                    по цене
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="radio" name="sorting" value="by-type">
-                    по типу
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="radio" name="sorting" value="by-function">
-                    по функционалу
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <ul>
-                <li>
-                  <label>
-                    <input type="radio" name="ascending-descending" value="ascending"
-                      aria-label="сортировать по возрастанию" checked>
-                  </label>
-                </li>
-                <li>
-                  <label>
-                    <input type="radio" name="ascending-descending" value="descending"
-                      aria-label="сортировать по убыванию">
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-          </form>
+          <ul class="sorting-menu" name="sorting-menu">
+            <li>
+              <a href="#" class="active-link">по цене</a>
+            </li>
+            <li>
+              <a href="#">по типу</a>
+            </li>
+            <li>
+              <a href="#">ПО ФУНКЦИОНАЛУ</a>
+            </li>
+            <li>
+              <a href="#" class="arrow up-arrow up-arrow-active"></a>
+            </li>
+            <li>
+              <a class="arrow down-arrow"></a>
+            </li>
+          </ul>
         </div>
         <ul class="catalog-items">
           <li tabindex="0">
@@ -356,6 +405,20 @@
             <div class="new-icon"></div>
           </li>
         </ul>
+        <ul class="page-number-switch">
+          <li>
+            <a href="#" class="current-page-number">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#" class="next-page">Следующая</a>
+          </li>
+        </ul>
       </section>
     </div>
     <div class="modal modal-to-cart visually-hidden">
@@ -371,6 +434,19 @@
         </ul>
       </div>
       <button class="modal-close" type="button"></button>
+    </div>
+  </section>
+  <section class="catalog-description">
+    <div class="content-container">
+      <h2 class="subtitle">Пара слов о перфораторах</h2>
+      <p class="normal-text">
+        Перфоратор — универсальный строительный инструмент.
+        Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
+        Существуют электромеханические и пневматические перфораторы.
+        Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка.
+        В ассортиментном ряду есть выбор «трехрежимнико
+        в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+      </p>
     </div>
   </section>
   <footer>
@@ -402,7 +478,7 @@
         <p class="copyright">&copy; 2010-2017 Компания «Техномарт»<br>Все права защищены</p>
         <ul class="footer-social">
           <li>
-            <a href="#" class="social-button vk" aria-label="Перейти в нашу группу во Вконтакте"></a>
+            <a href="#" name="test" class="social-button vk" aria-label="Перейти в нашу группу во Вконтакте"></a>
           </li>
           <li>
             <a href="#" class="social-button facebook" aria-label="Перейти в нашу группу в Фэйсбук"></a>
