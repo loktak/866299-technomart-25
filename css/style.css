@@ -57,6 +57,7 @@ header {
 
 .button-top {
   padding-top: 12px;
+  padding-bottom: 13px;
   padding-right: 45px;
   
   display: block;
@@ -155,6 +156,10 @@ header {
 
 .top-header-bookmarks {
   position: relative;
+}
+
+.not-empty-button-top {
+  background-color: #ee3643;
 }
 
 .top-header-bookmarks svg,
