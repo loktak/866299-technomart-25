@@ -60,8 +60,9 @@
               </g>
             </svg>
             Корзина:
-            </a>
-            <input tabindex="-1" class="top-header-item-numbers cart-numbers" type="number" value="0" readonly>
+          </a>
+          <input tabindex="-1" class="top-header-item-numbers cart-numbers" type="number" id="topCart" value="0"
+            readonly>
         </li>
         <li>
           <a href="#" class="button-top top-header-order">Оформить заказ</a>
@@ -78,31 +79,31 @@
         </li>
       </ul>
       <div class="account-block">
-      <ul class="log-in-register-block"> 
-      <li>
-          <a href="#" class="user-button sign-in">
-            <svg version="1.1" id="Layer_452" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px" viewBox="0 0 20 17"
-              enable-background="new 0 0 20 17" xml:space="preserve">
-              <g>
-                <polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	" />
-              </g>
-              <path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+        <ul class="log-in-register-block">
+          <li>
+            <a href="#" class="user-button sign-in">
+              <svg version="1.1" id="Layer_452" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="17px"
+                viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
+                <g>
+                  <polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	" />
+                </g>
+                <path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
                v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z" />
-            </svg>
-            Войти
-          </a>
-        </li>
-        <li>
-          <a href="#" class="user-button registration">Регистрация</a>
-        </li>
+              </svg>
+              Войти
+            </a>
+          </li>
+          <li>
+            <a href="#" class="user-button registration">Регистрация</a>
+          </li>
         </ul>
         <ul class="account-menu display-none">
-        <li class="user-name">
+          <li class="user-name">
             <a href="#" class="user-button login-name">
               <svg version="1.1" id="Layer_28" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="18px" viewBox="0 0 20 18"
-                enable-background="new 0 0 20 18" xml:space="preserve">
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="18px"
+                viewBox="0 0 20 18" enable-background="new 0 0 20 18" xml:space="preserve">
                 <path
                   d="M17.881,14.166c-2.144-0.735-4.256-1.666-5.207-2.39c-0.657-0.501-0.77-1.618-0.517-2.415
                c1.118-0.903,1.864-2.477,1.864-4.278C14.021,2.276,12.221,0,10,0S5.979,2.276,5.979,5.083c0,1.801,0.746,3.374,1.863,4.277
@@ -113,8 +114,8 @@
             <a href="#" class="user-button logout">
               <span class="visually-hidden">Выход</span>
               <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="17px" viewBox="0 0 21 17"
-                enable-background="new 0 0 21 17" xml:space="preserve">
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="17px"
+                viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
                 <g>
                   <polygon points="21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 	" />
                   <path d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027
@@ -122,18 +123,18 @@
                 </g>
               </svg>
             </a>
-            </li>
-            <li>
+          </li>
+          <li>
             <a href="#" class="account-options my-orders">Мои заказы</a>
-            </li>
-            <li>
-              <span class="dot"></span>
-            </li>
-            <li>
+          </li>
+          <li>
+            <span class="dot"></span>
+          </li>
+          <li>
             <a href="#" class="account-options personal-account">Личный кабинет</a>
           </li>
-      </ul>
-    </div>
+        </ul>
+      </div>
     </section>
     <nav class="header-navigation">
       <h2 class="visually-hidden">Главное меню</h2>
@@ -172,14 +173,14 @@
             <p>Соседям на радость!</p>
             <a href="catalog.html" class="red-button to-perforators">Открыть каталог</a>
           </div>
-          <button class="slider-arrow right-arrow"></button>
-          <button class="slider-arrow left-arrow"></button>
           <div class="slide slide-2 display-none">
             <img src="img/slide-image-2.jpg" width="620" height="266" alt="Изображение процесса работы с дрелью">
             <h2>Перфораторы</h2>
             <p>Настоящие мужские игрушки</p>
             <a href="catalog.html" class="red-button to-drills">Открыть каталог</a>
           </div>
+          <a class="slider-arrow right-arrow"></a>
+          <a class="slider-arrow left-arrow"></a>
         </div>
         <div class="goods-icon-right">
           <div class="goods-icon sale">
@@ -243,6 +244,20 @@
           <a href="#" class="catalog-item-buy-option">12500 Р.</a>
         </li>
       </ul>
+      <div class="modal modal-to-cart">
+        <p>Товар добавлен в корзину!</p>
+        <div class="grey-background">
+          <ul class="modal-to-cart-buttons">
+            <li>
+              <a class="red-button" href="#">Оформить заказ</a>
+            </li>
+            <li>
+              <a class="buy-more index-buy-more" href="#">Продолжить покупки</a>
+            </li>
+          </ul>
+        </div>
+        <button class="modal-close index-to-cart-modal-close" type="button"></button>
+      </div>
     </section>
     <section class="popular-makers content-container">
       <div class="block-title-container">
@@ -308,13 +323,13 @@
         <div class="slide-container">
           <ul class="service-slider">
             <li>
-              <a href="#" class="service-slider-link active-link">Доставка</a>
+              <a href="#" class="service-slider-link delivery-link active-link">Доставка</a>
             </li>
             <li>
-              <a href="#" class="service-slider-link">Гарантия</a>
+              <a href="#" class="service-slider-link guarantee-link">Гарантия</a>
             </li>
             <li>
-              <a href="#" class="service-slider-link">Кредит</a>
+              <a href="#" class="service-slider-link credit-link">Кредит</a>
             </li>
           </ul>
           <div class="slider-shadow"></div>
@@ -344,7 +359,7 @@
             <a href="#" class="red-button credit-button">Отправить заявку</a>
           </div>
         </div>
-        </div>
+      </div>
     </section>
     <section class="main-about content-container">
       <h2 class="visually-hidden">О компании</h2>
@@ -376,9 +391,12 @@
         </a>
         <a href="contact-us.html" class="red-button contact-us-button">Заблудились? Напишите нам!</a>
       </div>
-      <section class="modal modal-map visually-hidden">
+      <section class="modal modal-map">
         <h2 class="visually-hidden">Где мы находимся</h2>
         <div class="big-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1998.5958909420472!2d30.3217132!3d59.9388475!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1560233325531!5m2!1sru!2sru"
+            width="940" height="460" style="border:0" allowfullscreen></iframe>
           <a href="https://www.google.ru/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9388475,30.3217132,17.25z/data=!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833"
             target="_blank">
             <img src="img/map.jpg" width="940" height="446"
@@ -387,20 +405,21 @@
           <button class="modal-close" type="button"></button>
         </div>
       </section>
-      <section class="modal modal-contact-us visually-hidden">
+      <section class="modal modal-contact-us">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form class="contact-us-form" action="https://echo.htmlacademy.ru" method="get">
           <div class="text-areas">
             <label class="your-name">
               Ваше имя
-              <input type="text" name="fio" placeholder="Имя Фамилия" required>
+              <input type="text" name="fio" placeholder="Имя Фамилия">
             </label>
             <label class="contact-us-form-mail">
               Ваш e-mail
-              <input type="text" name="e-mail" placeholder="email@example.com" required>
+              <input type="text" name="mail" placeholder="email@example.com">
             </label>
             <label class="letter-area">Текст письма
-              <textarea name="text" id="contact-us-form-letter" rows="5" cols="50">В свободной форме</textarea>
+              <textarea name="text" id="contact-us-form-letter" rows="5" cols="50"
+                placeholder="В свободной форме"></textarea>
             </label>
           </div>
           <div class="grey-background">
@@ -416,7 +435,7 @@
   <footer>
     <section class="footer-bottom-navigation content-container">
       <h2 class="visually-hidden">Нижнее меню сайта</h2>
-      <a href="index.html" class="logo logo-footer">
+      <a href="index.html" class="logo-footer">
         <img src="img/logo.svg" width="138" height="23" alt="Логотип магазина Техномарт">
       </a>
       <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
@@ -462,6 +481,7 @@
       </section>
     </div>
   </footer>
+  <script src="js/script.js" rel="script"></script>
 </body>
 
 </html>
