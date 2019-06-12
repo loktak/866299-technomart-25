@@ -222,8 +222,7 @@ for (var n = 0; n < linkbookm.length; n++) {
       evt.preventDefault();
       itemsBookmarks = parseInt(document.querySelector(".bookmarks-number").value, 10 ) + 1;
       bookmValue.value = itemsBookmarks;
-      bookmarksTopButton.classList.add("not-empty-button-top");
+      bookmarksTopButton.classList.add("not-empty-button-top");  
   });
 }
-
 //изменение фона у кнопок в шапке при добавления товара
