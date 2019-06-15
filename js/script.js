@@ -124,30 +124,39 @@
  //верхний слайдер
  var slide1 = document.querySelector(".slide-1");
  var slide2 = document.querySelector(".slide-2");
- var right = document.querySelector(".right-arrow");
- var left = document.querySelector(".left-arrow");
+ var arrows = document.querySelectorAll(".slider-arrow");
+ var button1 = document.querySelectorAll(".button-1");
+ var button2 = document.querySelectorAll(".button-2");
 
- right.addEventListener("click", function (evt) {
+
+ for (var k = 0; k < arrows.length; k++) {
+   arrows[k].addEventListener("click", function (evt) {
+    evt.preventDefault();
+    if (slide2.classList.contains("display-none")) {
+      slide2.classList.remove("display-none");
+      slide1.classList.add("display-none");
+    } else {
+      slide1.classList.remove("display-none");
+      slide2.classList.add("display-none");
+    }
+   });
+ }
+
+ for (var b = 0; b < button1.length; b++) {
+   button1[b].addEventListener("click", function (evt) {
+    evt.preventDefault();
+      slide1.classList.remove("display-none");
+      slide2.classList.add("display-none");
+   });
+ }
+
+ for (var c = 0; c < button2.length; c++) {
+  button2[c].addEventListener("click", function (evt) {
    evt.preventDefault();
-   if (slide2.classList.contains("display-none")) {
      slide2.classList.remove("display-none");
      slide1.classList.add("display-none");
-   } else {
-     slide1.classList.remove("display-none");
-     slide2.classList.add("display-none");
-   }
- });
-
- left.addEventListener("click", function (evt) {
-   evt.preventDefault();
-   if (slide2.classList.contains("display-none")) {
-     slide2.classList.remove("display-none");
-     slide1.classList.add("display-none");
-   } else {
-     slide1.classList.remove("display-none");
-     slide2.classList.add("display-none");
-   }
- });
+  });
+}
 
  //изменение состояния для вошедщих и не вошедших пользователей
  
@@ -177,24 +186,14 @@
  
 // Окно добавления в корзину
 var linkbuy = document.querySelectorAll(".buy-button");
-var linkbookm = document.querySelectorAll(".to-bookmarks");
 var modalCart = document.querySelector(".modal-to-cart");
 var cartClose = document.querySelector(".modal-to-cart .modal-close");
 var buyMore = modalCart.querySelector(".buy-more");
-var cartValue = document.querySelector(".cart-numbers");
-var bookmValue = document.querySelector(".bookmarks-number");
-var itemsCart = document.querySelector(".cart-numbers").value;
-var itemsBookmarks = document.querySelector(".bookmarks-number").value;
-var cartTopButton = document.querySelector(".top-header-cart");
-var bookmarksTopButton = document.querySelector(".top-header-bookmarks");
 
 for (var i = 0; i < linkbuy.length; i++) {
     linkbuy[i].addEventListener("click", function (evt) {
         evt.preventDefault();
-        modalCart.classList.add("modal-show");
-        itemsCart = parseInt(document.querySelector(".cart-numbers").value, 10 ) + 1;
-        cartValue.value = itemsCart;
-        cartTopButton.classList.add("not-empty-button-top");      
+        modalCart.classList.add("modal-show");   
     });
 }
 
@@ -216,13 +215,3 @@ window.addEventListener("keydown", function (evt) {
         }
     }
 });
-
-for (var n = 0; n < linkbookm.length; n++) {
-  linkbookm[n].addEventListener("click", function (evt) {
-      evt.preventDefault();
-      itemsBookmarks = parseInt(document.querySelector(".bookmarks-number").value, 10 ) + 1;
-      bookmValue.value = itemsBookmarks;
-      bookmarksTopButton.classList.add("not-empty-button-top");  
-  });
-}
-//изменение фона у кнопок в шапке при добавления товара
