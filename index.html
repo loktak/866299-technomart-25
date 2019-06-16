@@ -4,38 +4,41 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="css/normolize.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style-min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic"
+    rel="stylesheet">
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="decorative-lane-top-bottom">
       <ul class="header-top-navigation content-container">
         <li>
-          <a href="index.html" class="logo logo-top">
+          <a class="logo logo-top">
             <img src="img/logo.svg" width="109" height="19" alt="Логотип магазина Техномарт">
           </a>
         </li>
         <li>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="GET">
-            <input type="search" name="top-header-search" class="search" placeholder="Поиск:"
-              aria-label="Поиск по сайту">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-              y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17"
-              xml:space="preserve">
-              <g id="Layer_1">
-              </g>
-              <g id="Layer_2">
-                <path d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
+            <label class="search-label"><input type="search" name="top-header-search" class="search"
+                placeholder="Поиск:" aria-label="Поиск по сайту">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17"
+                xml:space="preserve">
+                <g id="Layer_1">
+                </g>
+                <g id="Layer_2">
+                  <path d="M17,15.586l-3.542-3.542C14.421,10.782,15,9.21,15,7.5C15,3.358,11.643,0,7.5,0C3.358,0,0,3.358,0,7.5
              C0,11.643,3.358,15,7.5,15c1.71,0,3.282-0.579,4.544-1.542L15.586,17L17,15.586z M2,7.5C2,4.467,4.467,2,7.5,2
              C10.532,2,13,4.467,13,7.5c0,3.032-2.468,5.5-5.5,5.5C4.467,13,2,10.532,2,7.5z" />
-              </g>
-            </svg>
+                </g>
+              </svg>
+            </label>
           </form>
         </li>
-        <li class="bookmarks-conteiner">
+        <li class="bookmarks-container">
           <a href="#" class="button-top top-header-bookmarks">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
               <path fill="#ffffff"
@@ -44,7 +47,7 @@
             Закладки: 0
           </a>
         </li>
-        <li class="cart-conteiner">
+        <li class="cart-container">
           <a href="#" class="button-top top-header-cart">
             <svg version="1.1" id="Layer_71" xmlns="http://www.w3.org/2000/svg"
               xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px" viewBox="0 0 15 15"
@@ -64,9 +67,9 @@
       </ul>
     </div>
     <section class="header-info content-container">
-      <h1>Интернет-магазин строительных материалов<br>и инструментов для ремонта</h1>
+      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
       <ul class="header-mid-info">
-        <li class="phone-adress-container">
+        <li class="phone-address-container">
           <a class="header-info-phone-number" href="tel:+78125550555" aria-label="Номер нашего телефона и адрес">+7
             (812) 555-05-55</a>
           <p class="header-info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -132,7 +135,7 @@
     </section>
     <nav class="header-navigation">
       <h2 class="visually-hidden">Главное меню</h2>
-      <ul class="site-navigation">
+      <ul class="site-navigation content-container">
         <li><a class="main-link" href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a class="catalog-link" href="catalog.html">Каталог</a></li>
@@ -143,8 +146,8 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="goods_block content-container">
+  <main class="main">
+    <section class="goods-block content-container">
       <h2 class="visually-hiden">Наши товары</h2>
       <div class="goods-icon material new-item">
         <span class="privileges-title">Материалы</span>
@@ -202,10 +205,21 @@
       <ul class="catalog-popular">
         <li tabindex="0">
           <a href="#" class="catalog-item-image" tabindex="-1">
-          <img src="img/bfg-9000.jpg" width="218" height="170" alt="Изображение BFG-9000">
+            <img src="img/bfg-9000.jpg" width="218" height="170" alt="Изображение BFG-9000">
           </a>
           <div class="catalog-items-user-buttons">
-            <a href="#" class="buy-button" aria-label="Купить перфоратор BOSCH BFG 9000">купить</a>
+            <a href="#" class="buy-button" aria-label="Купить перфоратор BOSCH BFG 9000">
+              <svg version="1.1" id="Layer_71" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px"
+                viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                <g>
+                  <circle cx="4.5" cy="13.5" r="1.5" />
+                  <circle cx="12.5" cy="13.5" r="1.5" />
+                  <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	" />
+                </g>
+              </svg>
+              купить
+            </a>
             <a href="#" class="to-bookmarks" aria-label="Добавить в закладки перфоратор BOSH BFG 9000">в закладки</a>
           </div>
           <h3>Перфоратор BOSCH BFG 9000</h3>
@@ -214,10 +228,21 @@
         </li>
         <li tabindex="0">
           <a href="#" class="catalog-item-image" tabindex="-1">
-          <img src="img/bfg-3000.jpg" width="218" height="170" alt="Изображение BFG-3000">
+            <img src="img/bfg-3000.jpg" width="218" height="170" alt="Изображение BFG-3000">
           </a>
           <div class="catalog-items-user-buttons">
-            <a href="#" class="buy-button" aria-label="Купить перфоратор BOSCH BFG 3000">купить</a>
+            <a href="#" class="buy-button" aria-label="Купить перфоратор BOSCH BFG 3000">
+              <svg version="1.1" id="Layer_71" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px"
+                viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                <g>
+                  <circle cx="4.5" cy="13.5" r="1.5" />
+                  <circle cx="12.5" cy="13.5" r="1.5" />
+                  <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	" />
+                </g>
+              </svg>
+              купить
+            </a>
             <a href="#" class="to-bookmarks" aria-label="Добавить в закладки перфоратор BOSH BFG 3000">в закладки</a>
           </div>
           <h3>Перфоратор BOSCH BFG 3000</h3>
@@ -229,7 +254,18 @@
             <img src="img/bfg-6000.jpg" width="218" height="170" alt="Изображение BFG-6000">
           </a>
           <div class="catalog-items-user-buttons">
-            <a href="#" class="buy-button" aria-label="Купить перфоратор BOSH BFG 6000">купить</a>
+            <a href="#" class="buy-button" aria-label="Купить перфоратор BOSH BFG 6000">
+              <svg version="1.1" id="Layer_71" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px"
+                viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                <g>
+                  <circle cx="4.5" cy="13.5" r="1.5" />
+                  <circle cx="12.5" cy="13.5" r="1.5" />
+                  <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	" />
+                </g>
+              </svg>
+              купить
+            </a>
             <a href="#" class="to-bookmarks" aria-label="Добавить в закладки перфоратор BOSH BFG 6000">в закладки</a>
           </div>
           <h3>Перфоратор BOSCH BFG 6000</h3>
@@ -241,7 +277,18 @@
             <img src="img/bfg-2000.jpg" width="218" height="170" alt="Изображение bfg-3000">
           </a>
           <div class="catalog-items-user-buttons">
-            <a href="#" class="buy-button" aria-label="Купить перфоратор BOSH BFG 2000">купить</a>
+            <a href="#" class="buy-button" aria-label="Купить перфоратор BOSH BFG 2000">
+              <svg version="1.1" id="Layer_71" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="15px" height="15px"
+                viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+                <g>
+                  <circle cx="4.5" cy="13.5" r="1.5" />
+                  <circle cx="12.5" cy="13.5" r="1.5" />
+                  <polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951 	" />
+                </g>
+              </svg>
+              купить
+            </a>
             <a href="#" class="to-bookmarks" aria-label="Добавить в закладки перфоратор BOSH BFG 2000">в закладки</a>
           </div>
           <h3>Перфоратор BOSCH BFG 2000</h3>
@@ -250,7 +297,7 @@
       </ul>
       <div class="modal modal-to-cart">
         <p>Товар добавлен в корзину!</p>
-        <div class="grey-background">
+        <div class="bottom-modal-background">
           <ul class="modal-to-cart-buttons">
             <li>
               <a class="red-button" href="#">Оформить заказ</a>
@@ -346,16 +393,16 @@
             </p>
           </div>
           <div class="slider-description slide-guarantee">
-            <h2 class="subtitle">Гарантия</h2>
+            <h2 class="subtitle subtitle-36">Гарантия</h2>
             <p class="normal-text">
               Если купленный у нас товар поломается или заискрит,<br>
               а также в случае пожара, спровоцированного его возгаранием,
-              вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+              вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.
             </p>
           </div>
           <div class="slider-description slide-credit">
-            <h2 class="subtitle">Кредит</h2>
+            <h2 class="subtitle subtitle-36">Кредит</h2>
             <p class="normal-text">
               Залезть в долговую яму стало проще!
               Кредитные консультанты придут вам на помощь.
@@ -370,13 +417,13 @@
       <div class="about-company-block">
         <p class="subtitle">Компания «техномарт»</p>
         <p class="normal-text about-company-text-1">
-          Настоящий мужской шоппинг начинается здесь! 
-          Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          Настоящий мужской шоппинг начинается здесь!
+          Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на
+          гастарбайтерах.
         </p>
         <p class="normal-text about-company-text-2">
           Мы можем доставить ваш товар в самые отдаленные точки России!
           Техномарт работает со многими транспортными компаниями:
-          
         </p>
         <ul class="delivery-partners">
           <li>Деловые линии</li>
@@ -426,7 +473,7 @@
                 placeholder="В свободной форме"></textarea>
             </label>
           </div>
-          <div class="grey-background">
+          <div class="bottom-modal-background">
             <button class="button" type="submit">
               Отправить
             </button>
@@ -436,10 +483,10 @@
       </section>
     </section>
   </main>
-  <footer>
+  <footer class="footer">
     <section class="footer-bottom-navigation content-container">
       <h2 class="visually-hidden">Нижнее меню сайта</h2>
-      <a href="index.html" class="logo-footer">
+      <a class="logo-footer">
         <img src="img/logo-foooter-ie.svg" width="138" height="23" alt="Логотип магазина Техномарт">
       </a>
       <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55</p>
